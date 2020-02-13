@@ -148,7 +148,7 @@ img::-moz-selection {
     color: #fed136
 }
 
-@media (min-width:1212px) {
+@media (min-width:1100px) {
     #mainNav .navbar-brand {
         margin-left: 4rem;
         font-size: 1.75em;
