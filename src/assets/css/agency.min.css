@@ -104,7 +104,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-    background-color: #212529
+    background-color: rgba(33, 37, 41, 0.9);
 }
 
 #mainNav .navbar-toggler {
@@ -127,7 +127,7 @@ img::-moz-selection {
     margin-top: -10px;
     margin-left: -280px;
     padding: 10px 20px;
-    width: 40%;
+    width: 25%;
     margin-right: -5px;
 }
 
@@ -148,12 +148,20 @@ img::-moz-selection {
     color: #fed136
 }
 
-@media (min-width:1100px) {
+@media (min-width:1200px) {
     #mainNav .navbar-brand {
         margin-left: 4rem;
         font-size: 1.75em;
         -webkit-transition: all .3s;
         transition: all .3s
+    }
+}
+
+@media (min-width:1196px){
+    
+    #navLogo {
+        align-items: center;
+        width: 35%;
     }
 }
 
@@ -164,12 +172,13 @@ img::-moz-selection {
         -webkit-transition: padding-top .3s, padding-bottom .3s;
         transition: padding-top .3s, padding-bottom .3s;
         border: none;
-        background-color: transparent
+        background-color: rgba(33, 37, 41, 0.9);
     }
     #mainNav .navbar-brand {
         font-size: 1.75em;
         -webkit-transition: all .3s;
-        transition: all .3s
+        transition: all .3s;
+        align-content: center;
     }
     #mainNav .navbar-nav .nav-item .nav-link {
         padding: 1.1em 1em!important
@@ -183,21 +192,31 @@ img::-moz-selection {
         font-size: 1.25em;
         padding: 12px 0
     }
+
+    #navLogo{
+        width: 30%;
+    }
+}
+
+@media (max-width:300px) {
+    #navLogo{
+        width: 15%;
+    }
 }
 
 header.masthead {
     text-align: center;
     color: #fff;
-    background-image: url("https://i.ibb.co/g3xGjyv/grafico.jpg");
+    background-image: url("");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
 }
 
-header.masthead .intro-text {
-    padding-top: 150px;
-    padding-bottom: 100px
+header.masthead .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 header.masthead .intro-text .intro-lead-in {
@@ -208,12 +227,22 @@ header.masthead .intro-text .intro-lead-in {
     font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 }
 
+header.masthead .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
 header.masthead .intro-text .intro-heading {
     font-size: 25px;
     font-weight: 500;
     line-height: 27px;
     margin-bottom: 25px;
     font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+}
+
+header.masthead .container>img {
+    width: 500px;
+    margin-top: 70%;
 }
 
 @media (min-width:768px) {
@@ -679,4 +708,9 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
     background-color: #fed136
+}
+
+#flowChartImg {
+    align-items: center;
+    width: 100%;
 }

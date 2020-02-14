@@ -5,7 +5,6 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './assets/css/bootstrap.min.css'
 import './assets/css/agency.min.css'
-import './assets/css/fa.css'
 import './assets/css/sobre.css'
 
 ReactDOM.render(<App />, document.getElementById('root'));
