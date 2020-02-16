@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Image, Dot } from 'rebass'
+import { Box, Image } from 'rebass'
 import propTypes from 'prop-types'
 
 const IqDevices = ({
@@ -10,21 +10,13 @@ const IqDevices = ({
   ...props
 }) => <Box bg={color}
   style={{
-    borderRadius: 0,
-    overflow: '',
-    boxShadow: '',
     ...style
   }}
   {...props}>
   <Box pl={1} style={{
-    background: '',
-    borderBottom: ''
   }}>
-    {/* <Dot />
-    <Dot />
-    <Dot /> */}
   </Box>
-  {src ? <Image src={src} /> : children}
+  {src ? <Image src={src} /> : children }
 </Box>
 
 IqDevices.displayName = 'IqDevices'

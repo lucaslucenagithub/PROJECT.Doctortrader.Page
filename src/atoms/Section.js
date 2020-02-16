@@ -3,7 +3,6 @@ import propTypes from 'prop-types'
 import {
   Flex,
   Heading, Subhead} from 'rebass'
-import { justifyContent } from 'styled-system'
 
 const Section = ({
   heading, subhead, subheadOpacity,
@@ -18,10 +17,9 @@ const Section = ({
     <Heading textAlign='center' mb={[1]}>
       {heading}
     </Heading>
-    <Subhead textAlign='center' mb={[1, 2, 3, 4, 5]}
+    <Subhead textAlign = 'justify' mb={[1, 2, 3, 4, 5]}
       style={{
-        opacity: subheadOpacity,
-        justifyContent: 'center'
+        opacity: subheadOpacity
       }}>
       {subhead}
     </Subhead>

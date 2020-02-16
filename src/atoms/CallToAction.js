@@ -7,7 +7,10 @@ const CallToAction = styled(BaseButton)`
   letter-spacing: 0.1em;
   cursor: pointer;
   user-select: none;
-  ${width}
+  ${width};
+  background-color: #fdbb2d;
+  pointer-events: auto !important;
+  text-decoration: none !important;
 `
 
 CallToAction.displayName = 'CallToAction'

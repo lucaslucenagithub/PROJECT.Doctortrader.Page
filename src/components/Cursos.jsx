@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default ({ portfolioLinks }) => {
+export default ({ cursos }) => {
     return (
         <section className="bg-light page-section" id="portfolio">
         <div className="container">
@@ -12,7 +12,7 @@ export default ({ portfolioLinks }) => {
           </div>
           <div className="row">
             {
-                portfolioLinks && portfolioLinks.map(({ title, caption }, index) => 
+                cursos && cursos.map(({ title, caption }, index) => 
                     <div className="col-md-4 col-sm-6 portfolio-item">
                         <a className="portfolio-link" data-toggle="modal" href="#portfolioModal1">
                             <div className="portfolio-hover">

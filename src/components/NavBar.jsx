@@ -17,7 +17,6 @@ export default class NavBar extends Component {
   render() {
 
     const show = (this.state.menu) ? "show" : "";
-    const logo = '';
 
     return (
 
@@ -33,17 +32,17 @@ export default class NavBar extends Component {
               <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="#subServices">Sobre</a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="#cursos">Cursos</a>
+              </li> */}
+              <li className="nav-item">
+                <a className="nav-link js-scroll-trigger" href="#funcionamento">Funcionamento</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#about">Funcionamento</a>
+                <a className="nav-link js-scroll-trigger" href="#recomendacoes">Recomendações</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#team">Recomendações</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#contact">Participar</a>
+                <a className="nav-link js-scroll-trigger" href="#participar">Participar</a>
               </li>
             </ul>
           </div>

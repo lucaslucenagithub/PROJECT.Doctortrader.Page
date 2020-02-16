@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Button, Link } from 'react-floating-action-button'
+import { Container, Button } from 'react-floating-action-button'
 
 const FloatWidget = () => {
     return (
@@ -13,12 +13,13 @@ const FloatWidget = () => {
                 styles={{backgroundColor: '#ff4c4c'}}
                 icon="fa fa-instagram" 
                 className="fab-item btn btn-link btn-lg text-white"/> */}
-            <Button
+            <Button 
                 tooltip="Entre em nosso telegram!"
-                icon="fa fa-telegram fa-3x" 
+                icon="fa fa-telegram fa-3x"
                 rotate={true}
-                styles={{backgroundColor: 'white', color: '#0088cc'}}
-                onClick={'telegram.org'} />
+                styles={{ backgroundColor: 'white', color: '#0088cc' }}
+                onClick={() => window.open('https://t.me/DoctorTraderbr')}
+           />
         </Container>
     )
 }
